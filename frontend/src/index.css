@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'DM Sans', 'Sarabun', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #222222;
+}
+
+.headline-font {
+  font-family: 'DM Sans', 'Lexend', 'Sarabun', sans-serif;
+}
+
+.font-display {
+  font-family: 'Outfit', 'DM Sans', 'Sarabun', sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* MiniMax Colorful Cards design tokens */
+:root {
+  --brand-blue: #1456f0;
+  --brand-pink: #ea5ec1;
+  --brand-dark: #222222;
+  --brand-muted: #45515e;
+  --brand-border: #e5e7eb;
+  --brand-shadow: 0 4px 20px -2px rgba(44, 30, 116, 0.07), 0 2px 6px -1px rgba(44, 30, 116, 0.04);
+}
+
+button, a, input, select, textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--brand-blue);
+  outline-offset: 2px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
